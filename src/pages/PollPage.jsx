@@ -11,7 +11,7 @@ function PollPage() {
 
   
   let voterToken = localStorage.getItem("voterToken");
-  const link = `http://localhost:5174/poll/${pollId}`;
+  const link = `https://applyo-assignment-frontend.vercel.app/poll/${pollId}`;
   if (!voterToken) {
     voterToken = crypto.randomUUID();
     localStorage.setItem("voterToken", voterToken);
